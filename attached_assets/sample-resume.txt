@@ -1,0 +1,49 @@
+JOHN DOE
+Software Engineer
+john.doe@email.com | (555) 123-4567 | linkedin.com/in/johndoe | github.com/johndoe
+
+PROFESSIONAL SUMMARY
+Experienced Full-Stack Software Engineer with 5+ years of expertise in building scalable web applications using modern JavaScript frameworks. Proven track record of delivering high-quality code and collaborating effectively with cross-functional teams.
+
+TECHNICAL SKILLS
+Languages: JavaScript, TypeScript, Python, Java
+Frontend: React, Vue.js, Next.js, HTML5, CSS3, Tailwind CSS
+Backend: Node.js, Express, Django, RESTful APIs, GraphQL
+Database: PostgreSQL, MongoDB, Redis
+Tools: Git, Docker, AWS, CI/CD, Jest, Webpack
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Engineer | TechCorp Inc. | San Francisco, CA | 2021 - Present
+• Led development of a customer-facing dashboard serving 100K+ users, improving load time by 40%
+• Architected and implemented microservices architecture using Node.js and Docker
+• Mentored 3 junior developers and conducted code reviews to maintain code quality
+• Collaborated with product team to define technical requirements and roadmaps
+
+Software Engineer | StartupXYZ | Remote | 2019 - 2021
+• Built RESTful APIs using Express.js and PostgreSQL, handling 1M+ requests daily
+• Implemented real-time features using WebSockets and Redis for chat functionality
+• Optimized database queries, reducing response time by 60%
+• Participated in agile ceremonies and sprint planning
+
+Junior Developer | WebSolutions Ltd. | New York, NY | 2018 - 2019
+• Developed responsive web applications using React and modern CSS frameworks
+• Fixed bugs and implemented new features based on customer feedback
+• Wrote unit tests achieving 85% code coverage
+
+EDUCATION
+Bachelor of Science in Computer Science | University of California | 2018
+GPA: 3.7/4.0
+
+PROJECTS
+E-Commerce Platform (GitHub: johndoe/ecommerce)
+• Built full-stack e-commerce application with payment integration
+• Technologies: React, Node.js, Stripe API, MongoDB
+
+Real-time Collaboration Tool
+• Developed collaborative document editor with live cursor tracking
+• Technologies: Vue.js, WebSockets, operational transforms
+
+CERTIFICATIONS
+• AWS Certified Solutions Architect - Associate
+• MongoDB Certified Developer
