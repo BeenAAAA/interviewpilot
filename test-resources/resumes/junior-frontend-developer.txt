@@ -1,0 +1,45 @@
+ALEX JOHNSON
+Junior Frontend Developer
+Email: alex.johnson@email.com | Phone: (555) 987-6543
+Portfolio: alexjohnson.dev | GitHub: github.com/alexjdev
+
+SUMMARY
+Motivated frontend developer with 1.5 years of experience building responsive and accessible web applications. Recent computer science graduate passionate about creating intuitive user interfaces and learning new technologies.
+
+TECHNICAL SKILLS
+- Languages: JavaScript, HTML5, CSS3, TypeScript (learning)
+- Frontend: React, Redux, Material-UI, Bootstrap
+- Tools: Git, Webpack, npm, VS Code, Figma
+- Testing: Jest, React Testing Library (basic)
+- Other: REST APIs, Responsive Design, Accessibility (WCAG)
+
+PROFESSIONAL EXPERIENCE
+
+Junior Frontend Developer | WebDesign Co | Aug 2023 - Present
+- Develop and maintain React components for client websites
+- Collaborate with UX designers to implement responsive layouts
+- Fixed 50+ bugs and improved accessibility compliance
+- Participate in daily standups and code review sessions
+- Technologies: React, JavaScript, CSS3, Material-UI
+
+Frontend Intern | DigitalAgency | Jan 2023 - Jul 2023
+- Built landing pages and marketing websites using HTML, CSS, and JavaScript
+- Implemented responsive designs for mobile and tablet devices
+- Learned version control with Git and collaborative development workflows
+- Technologies: HTML5, CSS3, JavaScript, Bootstrap
+
+EDUCATION
+Bachelor of Science in Computer Science
+Tech University | 2019 - 2023
+GPA: 3.6/4.0
+
+Relevant Coursework: Web Development, Data Structures, Human-Computer Interaction, Software Engineering
+
+PROJECTS
+- Portfolio Website: Built personal portfolio using React and Framer Motion
+- Todo App: Created a full-featured todo application with local storage and filtering
+- Weather Dashboard: Developed weather app using OpenWeather API and React Hooks
+
+CERTIFICATIONS
+- freeCodeCamp Responsive Web Design Certification
+- JavaScript Algorithms and Data Structures Certification

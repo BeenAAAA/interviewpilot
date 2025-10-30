@@ -1,0 +1,63 @@
+Job Title: Data Engineer
+Company: InsightData Corp
+Location: New York, NY (Hybrid)
+
+About Us:
+InsightData Corp is a leader in business intelligence and analytics solutions. We help enterprises make data-driven decisions by building robust data infrastructure and delivering actionable insights from complex datasets.
+
+Role Overview:
+We're seeking a talented Data Engineer to design and build scalable data pipelines and infrastructure. You'll work closely with data scientists, analysts, and business stakeholders to ensure reliable data delivery and enable advanced analytics capabilities.
+
+Key Responsibilities:
+- Design, build, and maintain ETL/ELT data pipelines processing large volumes of data
+- Develop and optimize data models in cloud data warehouses (Snowflake, Redshift, BigQuery)
+- Implement real-time streaming data pipelines using Kafka and similar technologies
+- Create and maintain data orchestration workflows using Apache Airflow or similar tools
+- Optimize query performance and reduce data processing costs
+- Implement data quality checks and monitoring frameworks
+- Collaborate with data scientists to support ML model deployment
+- Document data architecture and maintain data catalog
+- Ensure data governance and security compliance
+
+Required Qualifications:
+- 2-4 years of data engineering experience
+- Strong proficiency in Python and SQL
+- Experience with big data technologies (Apache Spark, Hadoop)
+- Hands-on experience with cloud data warehouses (Snowflake, Redshift, or BigQuery)
+- Knowledge of ETL/ELT processes and data pipeline orchestration
+- Experience with workflow management tools (Apache Airflow, Prefect, or Dagster)
+- Understanding of data modeling and dimensional modeling techniques
+- Familiarity with cloud platforms (AWS, GCP, or Azure)
+- Strong problem-solving and analytical skills
+
+Preferred Qualifications:
+- Experience with real-time data streaming (Kafka, Kinesis)
+- Knowledge of dbt (data build tool) for analytics engineering
+- Familiarity with data quality frameworks (Great Expectations, deequ)
+- Experience with data visualization tools (Tableau, Looker, Power BI)
+- Understanding of data governance and metadata management
+- Experience with distributed computing frameworks
+- Background in software engineering best practices
+- Relevant certifications (AWS Data Analytics, Snowflake SnowPro, etc.)
+
+Tech Stack:
+- Languages: Python, SQL, Scala
+- Big Data: Apache Spark, Kafka, Hadoop
+- Data Warehouses: Snowflake, Amazon Redshift, BigQuery
+- ETL/Orchestration: Apache Airflow, dbt, AWS Glue
+- Cloud: AWS (S3, EMR, Redshift, Glue, Kinesis)
+- Databases: PostgreSQL, MongoDB, Cassandra
+- Tools: Git, Docker, Jupyter Notebooks
+
+What We Offer:
+- Competitive salary ($100k-$140k) based on experience
+- Comprehensive benefits package (health, dental, vision)
+- 401(k) with company matching
+- Flexible hybrid work model (3 days in office)
+- Professional development and training opportunities
+- Annual conference budget
+- Modern tech stack and cutting-edge tools
+- Collaborative data-driven culture
+- Career growth opportunities
+- Equity compensation
+- Generous PTO policy

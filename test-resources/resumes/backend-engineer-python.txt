@@ -1,0 +1,54 @@
+MICHAEL CHEN
+Backend Engineer
+Email: michael.chen@email.com | Phone: (555) 246-8135
+LinkedIn: linkedin.com/in/michaelchen | GitHub: github.com/mchen-dev
+
+SUMMARY
+Backend engineer with 4 years of experience specializing in Python and microservices architecture. Strong background in building scalable APIs, database optimization, and cloud infrastructure.
+
+TECHNICAL SKILLS
+- Languages: Python, Go, SQL, JavaScript
+- Backend Frameworks: Django, Flask, FastAPI
+- Databases: PostgreSQL, MySQL, MongoDB, Redis
+- Message Queues: RabbitMQ, Apache Kafka
+- Cloud & Infrastructure: AWS (EC2, RDS, Lambda, S3), Docker, Kubernetes
+- Tools: Git, Postman, Prometheus, Grafana, Jenkins
+
+PROFESSIONAL EXPERIENCE
+
+Backend Engineer | DataFlow Systems | May 2022 - Present
+- Design and implement RESTful APIs using FastAPI serving 2M+ requests daily
+- Built event-driven microservices architecture using Kafka and Docker
+- Optimized database queries reducing response time by 60%
+- Implemented monitoring and alerting using Prometheus and Grafana
+- Technologies: Python, FastAPI, PostgreSQL, Kafka, AWS, Kubernetes
+
+Software Engineer | CloudServices Inc | Jun 2020 - Apr 2022
+- Developed backend services for cloud-based data analytics platform
+- Created automated data pipelines processing 10GB+ data daily
+- Implemented OAuth2 authentication and role-based access control
+- Wrote comprehensive unit and integration tests achieving 90% coverage
+- Technologies: Python, Django, Redis, MySQL, AWS Lambda
+
+Junior Backend Developer | CodeWorks | Aug 2019 - May 2020
+- Built and maintained REST APIs for mobile applications
+- Performed database migrations and schema optimization
+- Fixed critical bugs in production systems
+- Technologies: Flask, PostgreSQL, Docker
+
+EDUCATION
+Bachelor of Science in Software Engineering
+Technical University | 2015 - 2019
+
+CERTIFICATIONS
+- AWS Certified Developer - Associate
+- Python Institute PCEP Certification
+
+NOTABLE ACHIEVEMENTS
+- Reduced API latency by 45% through caching strategies and query optimization
+- Led migration of monolithic application to microservices architecture
+- Presented at company tech talk on "Building Scalable APIs with FastAPI"
+
+OPEN SOURCE CONTRIBUTIONS
+- Contributor to FastAPI framework (documentation improvements)
+- Maintainer of Python CLI tool for database migrations (200+ GitHub stars)

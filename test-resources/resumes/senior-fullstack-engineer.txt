@@ -1,0 +1,49 @@
+JANE SMITH
+Senior Full-Stack Engineer
+Email: jane.smith@email.com | Phone: (555) 123-4567
+LinkedIn: linkedin.com/in/janesmith | GitHub: github.com/janesmith
+
+SUMMARY
+Experienced full-stack engineer with 7+ years of expertise in building scalable web applications using modern JavaScript frameworks and cloud technologies. Proven track record of leading technical initiatives and mentoring junior developers.
+
+TECHNICAL SKILLS
+- Languages: JavaScript/TypeScript, Python, Java, SQL
+- Frontend: React, Vue.js, Next.js, Redux, Tailwind CSS
+- Backend: Node.js, Express, Django, Spring Boot
+- Databases: PostgreSQL, MongoDB, Redis
+- Cloud & DevOps: AWS (EC2, S3, Lambda), Docker, Kubernetes, CI/CD
+- Tools: Git, Jest, Webpack, Vite
+
+PROFESSIONAL EXPERIENCE
+
+Senior Full-Stack Engineer | TechCorp Solutions | Jan 2021 - Present
+- Led development of a microservices-based e-commerce platform serving 500K+ users
+- Reduced page load time by 40% through code splitting and lazy loading optimization
+- Implemented real-time notification system using WebSockets and Redis pub/sub
+- Mentored 5 junior developers and conducted code reviews
+- Technologies: React, Node.js, TypeScript, PostgreSQL, AWS
+
+Full-Stack Developer | StartupXYZ | Mar 2018 - Dec 2020
+- Built RESTful APIs and responsive frontend interfaces for SaaS product
+- Integrated third-party payment gateways (Stripe, PayPal) and authentication systems
+- Improved test coverage from 40% to 85% using Jest and React Testing Library
+- Participated in Agile ceremonies and sprint planning
+- Technologies: Vue.js, Express, MongoDB, Docker
+
+Junior Developer | DevShop Inc | Jun 2017 - Feb 2018
+- Developed new features for client-facing web applications
+- Fixed bugs and maintained legacy codebases
+- Collaborated with design team to implement pixel-perfect UI components
+- Technologies: JavaScript, jQuery, PHP, MySQL
+
+EDUCATION
+Bachelor of Science in Computer Science
+State University | 2013 - 2017
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect - Associate
+- React Advanced Certification
+
+PROJECTS
+- Open Source Contributor: Contributed to popular React UI library (500+ stars)
+- Personal Project: Built a real-time collaborative code editor using WebRTC

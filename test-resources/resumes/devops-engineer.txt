@@ -1,0 +1,56 @@
+SARAH MARTINEZ
+DevOps Engineer
+Email: sarah.martinez@email.com | Phone: (555) 789-0123
+LinkedIn: linkedin.com/in/sarahmartinez
+
+SUMMARY
+DevOps engineer with 5 years of experience automating infrastructure, implementing CI/CD pipelines, and ensuring high availability of production systems. Expert in cloud platforms, containerization, and infrastructure as code.
+
+TECHNICAL SKILLS
+- Cloud Platforms: AWS, Azure, GCP
+- Container Orchestration: Kubernetes, Docker, Helm
+- Infrastructure as Code: Terraform, Ansible, CloudFormation
+- CI/CD: Jenkins, GitLab CI, GitHub Actions, ArgoCD
+- Monitoring: Prometheus, Grafana, ELK Stack, Datadog
+- Scripting: Bash, Python, PowerShell
+- Version Control: Git, GitLab, GitHub
+
+PROFESSIONAL EXPERIENCE
+
+Senior DevOps Engineer | CloudNative Corp | Feb 2022 - Present
+- Architected and maintained Kubernetes clusters hosting 100+ microservices
+- Implemented GitOps workflows using ArgoCD and Flux
+- Reduced deployment time by 70% through automated CI/CD pipelines
+- Managed multi-region AWS infrastructure serving 5M+ users
+- Implemented disaster recovery procedures with RPO < 1 hour
+- On-call rotation for production incidents (99.95% uptime SLA)
+- Technologies: Kubernetes, Terraform, AWS, Jenkins, Python
+
+DevOps Engineer | TechInnovate | Mar 2020 - Jan 2022
+- Built CI/CD pipelines for microservices deployment
+- Automated infrastructure provisioning using Terraform and Ansible
+- Implemented monitoring and alerting systems using Prometheus and Grafana
+- Reduced infrastructure costs by 30% through resource optimization
+- Technologies: Docker, Jenkins, AWS, Terraform, Bash
+
+Systems Administrator | DataCenter Solutions | Jun 2019 - Feb 2020
+- Managed Linux servers and network infrastructure
+- Automated routine tasks using Bash and Python scripts
+- Performed system monitoring and troubleshooting
+- Technologies: Linux, Bash, Python, Nagios
+
+EDUCATION
+Bachelor of Science in Information Technology
+State Technical College | 2015 - 2019
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect - Professional
+- Certified Kubernetes Administrator (CKA)
+- HashiCorp Certified: Terraform Associate
+- Linux Foundation Certified System Administrator
+
+ACHIEVEMENTS
+- Reduced deployment failures by 85% through automated testing and validation
+- Led migration of legacy infrastructure to cloud-native architecture
+- Established infrastructure security best practices and compliance standards
+- Mentored junior DevOps engineers on automation and cloud technologies
