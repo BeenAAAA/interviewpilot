@@ -119,8 +119,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
       if (req.file.mimetype === "application/pdf") {
         try {
           // Dynamic import for pdf-parse (CommonJS module)
-          const pdfParse = (await import("pdf-parse")).default;
-          const data = await pdfParse(req.file.buffer);
+          // pdf-parse exports the function directly, not as default export
+          const pdfParseModule: any = await import("pdf-parse");
+          const data = await pdfParseModule(req.file.buffer);
           text = data.text;
         } catch (pdfError) {
           console.error("PDF parsing error:", pdfError);
