@@ -27,8 +27,8 @@ export function ScoreDashboard({ score, previousScore = 0 }: ScoreDashboardProps
   };
 
   return (
-    <Card className="p-6">
-      <div className="flex flex-col items-center space-y-6">
+    <Card className="p-4 sm:p-6">
+      <div className="flex flex-col items-center space-y-4 sm:space-y-6">
         <div className="text-center">
           <h3 className="text-sm font-semibold text-foreground mb-1">
             Interview Score
@@ -38,7 +38,7 @@ export function ScoreDashboard({ score, previousScore = 0 }: ScoreDashboardProps
           </p>
         </div>
 
-        <CircularProgress value={score} size={180} strokeWidth={10} />
+        <CircularProgress value={score} size={160} strokeWidth={10} className="sm:w-[180px] sm:h-[180px]" />
 
         <div className="text-center space-y-2">
           <p className={`text-lg font-bold ${getScoreColor(score)}`}>

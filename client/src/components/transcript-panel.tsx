@@ -17,14 +17,14 @@ export function TranscriptPanel({ messages, isLoading }: TranscriptPanelProps) {
 
   return (
     <div className="flex flex-col h-full">
-      <div className="border-b border-border p-6">
-        <h2 className="text-lg font-semibold text-foreground">Interview Transcript</h2>
-        <p className="text-sm text-muted-foreground mt-1">
+      <div className="border-b border-border p-4 sm:p-6">
+        <h2 className="text-base sm:text-lg font-semibold text-foreground">Interview Transcript</h2>
+        <p className="text-xs sm:text-sm text-muted-foreground mt-1">
           Live conversation with AI interviewer
         </p>
       </div>
 
-      <div className="flex-1 overflow-y-auto p-6 space-y-6" data-testid="transcript-container">
+      <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-4 sm:space-y-6" data-testid="transcript-container">
         {messages.length === 0 && !isLoading && (
           <div className="flex items-center justify-center h-full">
             <div className="text-center">
@@ -46,7 +46,7 @@ export function TranscriptPanel({ messages, isLoading }: TranscriptPanelProps) {
           >
             <div
               className={cn(
-                "max-w-[80%] rounded-lg p-4 space-y-2",
+                "max-w-[85%] sm:max-w-[80%] rounded-lg p-3 sm:p-4 space-y-2",
                 message.speaker === "candidate"
                   ? "bg-primary/10 border border-primary/20"
                   : "bg-muted border border-border"
