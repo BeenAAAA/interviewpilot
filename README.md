@@ -36,6 +36,7 @@ npm install
 # Set up environment variables
 cp .env.example .env
 # Add your GEMINI_API_KEY to .env
+# Get your API key from: https://aistudio.google.com/app/apikey
 ```
 
 ## 🚀 Quick Start
@@ -81,7 +82,7 @@ graph TD
 
 | Variable | Description | Required |
 |----------|-------------|----------|
-| `GEMINI_API_KEY` | Google Gemini API Key | Yes |
+| `GEMINI_API_KEY` | Google Gemini API Key ([Get one here](https://aistudio.google.com/app/apikey)) | Yes |
 | `PORT` | Server Port (default: 5000) | No |
 
 ## 🧰 Key Components
