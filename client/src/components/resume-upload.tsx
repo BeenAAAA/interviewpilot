@@ -83,7 +83,7 @@ export function ResumeUpload({ onResumeText, value, disabled }: ResumeUploadProp
           onDragLeave={() => setIsDragging(false)}
           onDrop={handleDrop}
           className={cn(
-            "relative border-2 border-dashed rounded-lg p-8 text-center transition-colors",
+            "relative border-2 border-dashed rounded-lg p-6 sm:p-8 text-center transition-colors",
             isDragging ? "border-primary bg-primary/5" : "border-border hover-elevate",
             disabled && "opacity-50 cursor-not-allowed"
           )}
@@ -96,8 +96,8 @@ export function ResumeUpload({ onResumeText, value, disabled }: ResumeUploadProp
             className="absolute inset-0 opacity-0 cursor-pointer"
             data-testid="input-resume-file"
           />
-          <Upload className="h-10 w-10 mx-auto mb-3 text-muted-foreground" />
-          <p className="text-sm font-medium text-foreground mb-1">
+          <Upload className="h-8 w-8 sm:h-10 sm:w-10 mx-auto mb-3 text-muted-foreground" />
+          <p className="text-xs sm:text-sm font-medium text-foreground mb-1">
             Drop your resume here or click to browse
           </p>
           <p className="text-xs text-muted-foreground">

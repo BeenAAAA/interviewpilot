@@ -15,7 +15,7 @@ export function FeedbackPanel({ items }: FeedbackPanelProps) {
 
   return (
     <div className="flex flex-col h-full">
-      <div className="border-b border-border p-6">
+      <div className="border-b border-border p-4 sm:p-6 lg:block hidden">
         <h2 className="text-lg font-semibold text-foreground">Live Feedback</h2>
         <p className="text-sm text-muted-foreground mt-1">
           Real-time performance analysis
@@ -23,7 +23,7 @@ export function FeedbackPanel({ items }: FeedbackPanelProps) {
       </div>
 
       <ScrollArea className="flex-1">
-        <div className="p-6 space-y-8">
+        <div className="p-4 sm:p-6 space-y-6 sm:space-y-8">
           {/* Strengths */}
           <div className="space-y-3">
             <div className="flex items-center gap-2">

@@ -22,7 +22,7 @@ export function JobInfoForm({
   disabled,
 }: JobInfoFormProps) {
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-6">
       <div className="space-y-2">
         <Label htmlFor="job-title" className="text-sm font-semibold">
           Job Title

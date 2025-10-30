@@ -11,6 +11,7 @@ import { Card } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Download, RotateCcw } from "lucide-react";
 import { DEFAULT_SYSTEM_PROMPT, TranscriptMessage, FeedbackItem } from "@shared/schema";
 import { useToast } from "@/hooks/use-toast";
@@ -357,15 +358,15 @@ export default function Interview() {
     <div className="h-screen flex flex-col bg-background">
       {/* Header */}
       <header className="border-b border-border bg-card">
-        <div className="max-w-[1800px] mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-2xl font-bold text-foreground">Interview Coach</h1>
-              <p className="text-sm text-muted-foreground mt-1">
+        <div className="max-w-[1800px] mx-auto px-4 sm:px-6 py-3 sm:py-4">
+          <div className="flex items-center justify-between gap-4">
+            <div className="min-w-0 flex-1">
+              <h1 className="text-lg sm:text-2xl font-bold text-foreground">Interview Coach</h1>
+              <p className="text-xs sm:text-sm text-muted-foreground mt-1 hidden sm:block">
                 AI-powered mock interview practice with real-time feedback
               </p>
             </div>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
               {status === "completed" && messages.length > 0 && (
                 <Button
                   variant="outline"
@@ -375,7 +376,7 @@ export default function Interview() {
                   className="gap-2"
                 >
                   <Download className="h-4 w-4" />
-                  Download
+                  <span className="hidden sm:inline">Download</span>
                 </Button>
               )}
               {status === "completed" && (
@@ -387,7 +388,7 @@ export default function Interview() {
                   className="gap-2"
                 >
                   <RotateCcw className="h-4 w-4" />
-                  New Interview
+                  <span className="hidden sm:inline">New Interview</span>
                 </Button>
               )}
             </div>
@@ -395,8 +396,115 @@ export default function Interview() {
         </div>
       </header>
 
-      {/* Three-column layout */}
-      <div className="flex-1 flex overflow-hidden max-w-[1800px] mx-auto w-full">
+      {/* Mobile Layout - Tabs */}
+      <div className="flex-1 overflow-hidden lg:hidden">
+        <Tabs defaultValue="interview" className="h-full flex flex-col">
+          <TabsList className="w-full rounded-none border-b">
+            <TabsTrigger value="setup" className="flex-1">Setup</TabsTrigger>
+            <TabsTrigger value="interview" className="flex-1">Interview</TabsTrigger>
+            <TabsTrigger value="feedback" className="flex-1">Feedback</TabsTrigger>
+          </TabsList>
+
+          {/* Setup Tab */}
+          <TabsContent value="setup" className="flex-1 overflow-hidden m-0">
+            <ScrollArea className="h-full">
+              <div className="p-4 space-y-4">
+                <ResumeUpload
+                  onResumeText={setResumeText}
+                  value={resumeText}
+                  disabled={isFormDisabled}
+                />
+
+                <Separator />
+
+                <JobInfoForm
+                  jobTitle={jobTitle}
+                  companyName={companyName}
+                  jobRequirements={jobRequirements}
+                  onJobTitleChange={setJobTitle}
+                  onCompanyNameChange={setCompanyName}
+                  onJobRequirementsChange={setJobRequirements}
+                  disabled={isFormDisabled}
+                />
+
+                <Separator />
+
+                <PromptEditor
+                  value={systemPrompt}
+                  onChange={setSystemPrompt}
+                  disabled={isFormDisabled}
+                />
+
+                {/* Start button in mobile setup */}
+                {status === "idle" && (
+                  <div className="pt-4">
+                    <MicrophoneControl
+                      isRecording={false}
+                      isPaused={false}
+                      isActive={false}
+                      onStart={handleStartInterview}
+                      onStop={handleStopInterview}
+                      onPause={handlePauseInterview}
+                      onResume={handleResumeInterview}
+                      disabled={false}
+                    />
+                  </div>
+                )}
+              </div>
+            </ScrollArea>
+          </TabsContent>
+
+          {/* Interview Tab */}
+          <TabsContent value="interview" className="flex-1 overflow-hidden m-0 flex flex-col">
+            <div className="flex-1 overflow-hidden">
+              <TranscriptPanel messages={messages} isLoading={status === "active" && isRecording} />
+            </div>
+
+            {/* Controls */}
+            <div className="border-t border-border bg-card p-4 space-y-3">
+              {status === "active" && (
+                <>
+                  {/* Show interim transcript when speaking */}
+                  {interimTranscript && (
+                    <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-3">
+                      <p className="text-xs text-muted-foreground mb-1">Listening...</p>
+                      <p className="text-sm text-foreground italic">{interimTranscript}</p>
+                    </div>
+                  )}
+                  <ChatInput
+                    onSend={handleSendMessage}
+                    disabled={status !== "active"}
+                    placeholder="Type your response or speak..."
+                  />
+                </>
+              )}
+              <MicrophoneControl
+                isRecording={isRecording}
+                isPaused={status === "paused"}
+                isActive={status === "active" || status === "paused"}
+                onStart={handleStartInterview}
+                onStop={handleStopInterview}
+                onPause={handlePauseInterview}
+                onResume={handleResumeInterview}
+                disabled={status === "completed"}
+              />
+            </div>
+          </TabsContent>
+
+          {/* Feedback Tab */}
+          <TabsContent value="feedback" className="flex-1 overflow-hidden m-0">
+            <ScrollArea className="h-full">
+              <div className="p-4 space-y-4">
+                <ScoreDashboard score={score} previousScore={previousScore} />
+                <FeedbackPanel items={feedbackItems} />
+              </div>
+            </ScrollArea>
+          </TabsContent>
+        </Tabs>
+      </div>
+
+      {/* Desktop Layout - Three Columns */}
+      <div className="flex-1 hidden lg:flex overflow-hidden max-w-[1800px] mx-auto w-full">
         {/* Left Panel - Input Forms */}
         <div className="w-[400px] border-r border-border bg-card flex-shrink-0">
           <ScrollArea className="h-full">
