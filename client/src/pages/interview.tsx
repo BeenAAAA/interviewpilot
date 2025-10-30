@@ -14,6 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Download, RotateCcw } from "lucide-react";
 import { DEFAULT_SYSTEM_PROMPT, TranscriptMessage, FeedbackItem } from "@shared/schema";
 import { useToast } from "@/hooks/use-toast";
+import { useSpeechRecognition } from "@/hooks/use-speech-recognition";
 
 export default function Interview() {
   const { toast } = useToast();
@@ -36,6 +37,37 @@ export default function Interview() {
   const [feedbackItems, setFeedbackItems] = useState<FeedbackItem[]>([]);
   const [score, setScore] = useState(50);
   const [previousScore, setPreviousScore] = useState(50);
+  const [interimTranscript, setInterimTranscript] = useState("");
+
+  // Speech recognition for microphone input
+  const speechRecognition = useSpeechRecognition({
+    onTranscript: (text) => {
+      setInterimTranscript(text);
+    },
+    onFinalTranscript: (text) => {
+      // Send the transcribed text as a candidate response
+      if (text.trim() && wsRef.current && wsRef.current.readyState === WebSocket.OPEN) {
+        wsRef.current.send(
+          JSON.stringify({
+            type: "candidate_response",
+            sessionId: sessionId,
+            text: text,
+          })
+        );
+      }
+      setInterimTranscript("");
+    },
+    onError: (error) => {
+      toast({
+        title: "Microphone Error",
+        description: error,
+        variant: "destructive",
+      });
+      setIsRecording(false);
+    },
+    continuous: true,
+    interimResults: true,
+  });
 
   // WebSocket connection
   const connectWebSocket = useCallback((newSessionId: string) => {
@@ -142,6 +174,15 @@ export default function Interview() {
       return;
     }
 
+    if (!speechRecognition.isSupported) {
+      toast({
+        title: "Microphone Not Supported",
+        description: "Your browser doesn't support speech recognition. Please use Chrome, Edge, or Safari.",
+        variant: "destructive",
+      });
+      return;
+    }
+
     try {
       const response = await fetch("/api/interview/start", {
         method: "POST",
@@ -164,9 +205,12 @@ export default function Interview() {
       // Connect WebSocket
       connectWebSocket(newSessionId);
 
+      // Start speech recognition
+      speechRecognition.start();
+
       toast({
         title: "Interview Started",
-        description: "Good luck! The interviewer will begin shortly.",
+        description: "Good luck! The interviewer will begin shortly. You can speak your answers.",
       });
     } catch (error) {
       console.error("Failed to start interview:", error);
@@ -176,7 +220,7 @@ export default function Interview() {
         variant: "destructive",
       });
     }
-  }, [resumeText, jobTitle, companyName, jobRequirements, systemPrompt, connectWebSocket, toast]);
+  }, [resumeText, jobTitle, companyName, jobRequirements, systemPrompt, connectWebSocket, toast, speechRecognition]);
 
   const handleSendMessage = useCallback(
     (text: string) => {
@@ -204,6 +248,10 @@ export default function Interview() {
       setStatus("completed");
       setIsRecording(false);
 
+      // Stop speech recognition
+      speechRecognition.stop();
+      setInterimTranscript("");
+
       if (wsRef.current) {
         wsRef.current.close();
       }
@@ -215,7 +263,7 @@ export default function Interview() {
     } catch (error) {
       console.error("Failed to stop interview:", error);
     }
-  }, [sessionId, score, toast]);
+  }, [sessionId, score, toast, speechRecognition]);
 
   const handlePauseInterview = useCallback(async () => {
     if (!sessionId) return;
@@ -227,10 +275,14 @@ export default function Interview() {
 
       setStatus("paused");
       setIsRecording(false);
+
+      // Stop speech recognition when paused
+      speechRecognition.stop();
+      setInterimTranscript("");
     } catch (error) {
       console.error("Failed to pause interview:", error);
     }
-  }, [sessionId]);
+  }, [sessionId, speechRecognition]);
 
   const handleResumeInterview = useCallback(async () => {
     if (!sessionId) return;
@@ -242,10 +294,13 @@ export default function Interview() {
 
       setStatus("active");
       setIsRecording(true);
+
+      // Restart speech recognition when resumed
+      speechRecognition.start();
     } catch (error) {
       console.error("Failed to resume interview:", error);
     }
-  }, [sessionId]);
+  }, [sessionId, speechRecognition]);
 
   const handleReset = useCallback(() => {
     setSessionId("");
@@ -260,6 +315,10 @@ export default function Interview() {
     setCompanyName("");
     setJobRequirements("");
     setSystemPrompt(DEFAULT_SYSTEM_PROMPT);
+    setInterimTranscript("");
+
+    // Stop speech recognition
+    speechRecognition.stop();
 
     if (wsRef.current) {
       wsRef.current.close();
@@ -269,7 +328,7 @@ export default function Interview() {
       title: "Session Reset",
       description: "You can start a new interview.",
     });
-  }, [toast]);
+  }, [toast, speechRecognition]);
 
   const handleDownloadTranscript = useCallback(() => {
     const transcript = messages
@@ -378,11 +437,20 @@ export default function Interview() {
           {/* Controls */}
           <div className="border-t border-border bg-card p-6 space-y-4">
             {status === "active" && (
-              <ChatInput
-                onSend={handleSendMessage}
-                disabled={status !== "active"}
-                placeholder="Type your response and press Enter..."
-              />
+              <>
+                {/* Show interim transcript when speaking */}
+                {interimTranscript && (
+                  <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4">
+                    <p className="text-sm text-muted-foreground mb-1">Listening...</p>
+                    <p className="text-base text-foreground italic">{interimTranscript}</p>
+                  </div>
+                )}
+                <ChatInput
+                  onSend={handleSendMessage}
+                  disabled={status !== "active"}
+                  placeholder="Type your response or speak your answer..."
+                />
+              </>
             )}
             <MicrophoneControl
               isRecording={isRecording}
