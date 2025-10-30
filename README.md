@@ -128,3 +128,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 Made with ❤️ by [BeenAAAA](https://github.com/BeenAAAA)
+But Realisticly speaking it was made with tolerance from [Claude](https://github.com/Claude) (We ❤️ you claude!)
