@@ -1,0 +1,52 @@
+Job Title: Junior Frontend Developer
+Company: Creative Web Studio
+Location: Austin, TX (Hybrid)
+
+About Us:
+Creative Web Studio is a digital agency specializing in creating beautiful, user-friendly websites and web applications for clients across various industries. We're passionate about design, user experience, and clean code.
+
+Role Overview:
+We're looking for an enthusiastic Junior Frontend Developer to join our development team. This is a great opportunity for a recent graduate or someone early in their career to learn from experienced developers while working on diverse client projects.
+
+Key Responsibilities:
+- Develop responsive and accessible web interfaces using HTML, CSS, and JavaScript
+- Implement designs from Figma mockups into pixel-perfect code
+- Build and maintain React components for client websites
+- Collaborate with designers and senior developers on project requirements
+- Debug and fix frontend issues across different browsers
+- Participate in code reviews and team learning sessions
+- Stay updated with modern frontend development practices
+
+Required Qualifications:
+- 0-2 years of professional frontend development experience
+- Strong foundation in HTML5, CSS3, and JavaScript
+- Experience with React or similar frontend framework
+- Understanding of responsive design and mobile-first approach
+- Familiarity with Git version control
+- Good problem-solving abilities
+- Strong attention to detail
+- Eagerness to learn and grow
+
+Preferred Qualifications:
+- Experience with TypeScript
+- Knowledge of CSS preprocessors (Sass, Less)
+- Familiarity with UI component libraries (Material-UI, Ant Design)
+- Understanding of web accessibility standards (WCAG)
+- Experience with REST APIs
+- Portfolio of personal or academic projects
+
+Tech Stack:
+- Frontend: React, JavaScript, HTML5, CSS3
+- Styling: Tailwind CSS, Bootstrap, Sass
+- Tools: Git, npm, Webpack, VS Code
+- Design: Figma, Adobe XD
+
+What We Offer:
+- Competitive salary ($60k-$75k)
+- Mentorship from senior developers
+- Health and dental insurance
+- Professional development opportunities
+- Flexible work schedule
+- Collaborative and supportive team environment
+- Exposure to diverse projects and technologies
+- Potential for career growth

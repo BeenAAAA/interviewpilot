@@ -1,0 +1,67 @@
+DAVID RODRIGUEZ
+Full-Stack Web Developer
+Email: david.rodriguez@email.com | Phone: (555) 321-7890
+Portfolio: davidrodriguez.dev | GitHub: github.com/drodriguez
+
+SUMMARY
+Career-changing full-stack developer with 6 months of intensive coding bootcamp training and a background in project management. Passionate about building user-friendly applications and solving complex problems through code. Eager to contribute to a collaborative development team.
+
+TECHNICAL SKILLS
+- Languages: JavaScript, HTML5, CSS3, SQL
+- Frontend: React, Redux, Bootstrap, Responsive Design
+- Backend: Node.js, Express.js, RESTful APIs
+- Databases: MongoDB, PostgreSQL
+- Tools: Git, GitHub, VS Code, Postman, Heroku
+- Methodologies: Agile, Scrum
+
+EDUCATION & TRAINING
+
+Full-Stack Web Development Bootcamp | CodeAcademy Pro | Jul 2024 - Dec 2024
+- Intensive 6-month program covering modern web development technologies
+- Built 10+ full-stack applications from conception to deployment
+- Participated in daily code challenges and pair programming sessions
+- Completed capstone project: E-commerce platform with payment integration
+
+Bachelor of Business Administration | State University | 2014 - 2018
+Major: Business Management
+GPA: 3.5/4.0
+
+TECHNICAL PROJECTS
+
+ShopHub - E-commerce Platform (Capstone Project)
+- Built full-stack e-commerce application with user authentication and shopping cart
+- Implemented Stripe payment integration and order management system
+- Technologies: React, Node.js, Express, MongoDB, Stripe API
+- GitHub: github.com/drodriguez/shophub
+
+TaskMaster - Project Management Tool
+- Developed collaborative task management application with real-time updates
+- Implemented drag-and-drop functionality and user role management
+- Technologies: React, Socket.io, Node.js, PostgreSQL
+- Live Demo: taskmasterapp.herokuapp.com
+
+Weather Forecast App
+- Created weather application using OpenWeather API
+- Implemented location search and 5-day forecast display
+- Technologies: React, REST API, CSS3
+
+PREVIOUS WORK EXPERIENCE
+
+Project Manager | Marketing Solutions Inc | Jan 2019 - Jun 2024
+- Managed cross-functional teams of 5-10 members on marketing campaigns
+- Coordinated project timelines, budgets, and stakeholder communications
+- Utilized Agile methodologies and project management tools (Jira, Trello)
+- Led digital transformation initiative improving team efficiency by 35%
+
+SKILLS TRANSFERABLE TO SOFTWARE DEVELOPMENT
+- Problem-solving and analytical thinking
+- Team collaboration and communication
+- Agile project management and sprint planning
+- Client relationship management
+- Deadline-driven execution
+
+ADDITIONAL INFORMATION
+- Active participant in local developer meetups and hackathons
+- Contributing to open-source projects to gain real-world experience
+- Currently learning TypeScript and React Native
+- Available for immediate employment

@@ -1,0 +1,65 @@
+PRIYA PATEL
+Data Engineer
+Email: priya.patel@email.com | Phone: (555) 654-3210
+LinkedIn: linkedin.com/in/priyapatel | GitHub: github.com/ppatel-data
+
+SUMMARY
+Data engineer with 3 years of experience building robust data pipelines and scalable data infrastructure. Expertise in ETL processes, data warehousing, and big data technologies. Skilled at transforming raw data into actionable insights for business intelligence.
+
+TECHNICAL SKILLS
+- Languages: Python, SQL, Scala, Java
+- Big Data: Apache Spark, Hadoop, Hive, Kafka
+- Data Warehousing: Snowflake, Amazon Redshift, BigQuery
+- ETL Tools: Apache Airflow, dbt, Talend
+- Databases: PostgreSQL, MySQL, Cassandra, MongoDB
+- Cloud Platforms: AWS (S3, Glue, EMR, Kinesis), GCP
+- Data Visualization: Tableau, Looker, Power BI
+- Tools: Git, Docker, Jupyter Notebooks
+
+PROFESSIONAL EXPERIENCE
+
+Data Engineer | Analytics Corp | Apr 2023 - Present
+- Design and maintain data pipelines processing 500GB+ daily using Apache Spark
+- Built real-time streaming pipelines using Kafka and AWS Kinesis
+- Implemented data quality monitoring and validation frameworks
+- Optimized Snowflake data warehouse queries reducing costs by 40%
+- Collaborate with data scientists and analysts to deliver data solutions
+- Technologies: Python, Spark, Airflow, Snowflake, AWS, Kafka
+
+Junior Data Engineer | DataTech Solutions | Jun 2021 - Mar 2023
+- Developed ETL pipelines to extract data from multiple sources (APIs, databases, files)
+- Created and maintained data models in Amazon Redshift
+- Automated data quality checks and monitoring alerts
+- Built scheduled workflows using Apache Airflow
+- Technologies: Python, SQL, Redshift, Airflow, Docker
+
+Data Analyst Intern | RetailData Inc | Jan 2021 - May 2021
+- Analyzed customer behavior data and created visualization dashboards
+- Wrote SQL queries to extract insights from transactional databases
+- Assisted in data cleaning and preparation tasks
+- Technologies: SQL, Python, Tableau
+
+EDUCATION
+Master of Science in Data Science
+University of Technology | 2019 - 2021
+GPA: 3.8/4.0
+
+Bachelor of Engineering in Computer Science
+Engineering College | 2015 - 2019
+
+CERTIFICATIONS
+- AWS Certified Data Analytics - Specialty
+- Databricks Certified Associate Developer for Apache Spark
+- Snowflake SnowPro Core Certification
+
+PROJECTS & ACHIEVEMENTS
+- Architected data lake solution reducing data processing time by 60%
+- Built recommendation engine data pipeline processing 10M+ events daily
+- Presented at company-wide tech summit on "Best Practices for Data Pipeline Design"
+- Reduced data pipeline failures by 75% through improved error handling and monitoring
+
+TECHNICAL EXPERTISE
+- Data Modeling: Star schema, snowflake schema, dimensional modeling
+- Data Integration: API integration, CDC (Change Data Capture), batch processing
+- Performance Optimization: Query tuning, partitioning strategies, indexing
+- Data Governance: Data lineage, metadata management, data quality frameworks

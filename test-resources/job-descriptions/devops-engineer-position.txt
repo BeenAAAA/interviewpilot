@@ -1,0 +1,62 @@
+Job Title: DevOps Engineer
+Company: CloudScale Solutions
+Location: Seattle, WA (Hybrid)
+
+About Us:
+CloudScale Solutions helps companies migrate to cloud-native architectures and build robust, scalable infrastructure. We work with cutting-edge technologies and follow industry best practices to deliver reliable systems.
+
+Role Overview:
+We're looking for an experienced DevOps Engineer to help us build and maintain infrastructure for high-traffic applications. You'll work on automation, CI/CD pipelines, infrastructure as code, and ensuring system reliability and security.
+
+Key Responsibilities:
+- Design and maintain scalable Kubernetes infrastructure
+- Implement and optimize CI/CD pipelines for continuous delivery
+- Automate infrastructure provisioning using Terraform and Ansible
+- Monitor system health and performance using observability tools
+- Ensure security best practices and compliance standards
+- Manage multi-cloud environments (AWS, Azure, GCP)
+- Participate in on-call rotation for incident response
+- Collaborate with development teams on deployment strategies
+- Document infrastructure architecture and runbooks
+
+Required Qualifications:
+- 4+ years of DevOps or infrastructure engineering experience
+- Strong expertise with container orchestration (Kubernetes, Docker)
+- Proficiency with infrastructure as code (Terraform, CloudFormation, Ansible)
+- Experience building and maintaining CI/CD pipelines (Jenkins, GitLab CI, GitHub Actions)
+- Solid understanding of cloud platforms (AWS preferred)
+- Strong Linux/Unix administration skills
+- Experience with monitoring and logging tools (Prometheus, Grafana, ELK)
+- Scripting skills in Bash, Python, or similar
+- Knowledge of networking, security, and system architecture
+
+Preferred Qualifications:
+- Certified Kubernetes Administrator (CKA) or similar certifications
+- Experience with GitOps practices (ArgoCD, Flux)
+- Knowledge of service mesh technologies (Istio, Linkerd)
+- Familiarity with serverless architectures
+- Experience with database administration and optimization
+- Understanding of security compliance (SOC2, HIPAA)
+- Experience with disaster recovery and backup strategies
+- Background in software development
+
+Tech Stack:
+- Container Orchestration: Kubernetes, Docker, Helm
+- IaC: Terraform, Ansible, CloudFormation
+- CI/CD: Jenkins, GitLab CI, GitHub Actions, ArgoCD
+- Cloud: AWS (primary), Azure, GCP
+- Monitoring: Prometheus, Grafana, Datadog, ELK Stack
+- Scripting: Bash, Python, Go
+- Version Control: Git, GitLab
+
+What We Offer:
+- Competitive salary ($130k-$180k) + bonuses
+- Comprehensive health, dental, and vision insurance
+- 401(k) with 5% company match
+- Flexible work arrangements (3 days in office, 2 remote)
+- Professional development and certification budget
+- Conference attendance opportunities
+- Latest tools and technologies
+- Collaborative engineering culture
+- Stock options
+- 4 weeks PTO + holidays

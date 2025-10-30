@@ -1,0 +1,59 @@
+Job Title: Backend Engineer (Python)
+Company: DataStream Analytics
+Location: Remote (US-based)
+
+About Us:
+DataStream Analytics provides real-time data processing and analytics solutions for Fortune 500 companies. Our platform processes billions of events daily, helping businesses make data-driven decisions in real-time.
+
+Role Overview:
+We're seeking a skilled Backend Engineer with strong Python expertise to join our platform engineering team. You'll work on building scalable APIs, optimizing data processing pipelines, and ensuring system reliability.
+
+Key Responsibilities:
+- Design, develop, and maintain high-performance RESTful APIs using Python
+- Build and optimize microservices architecture
+- Implement efficient database schemas and optimize query performance
+- Develop event-driven systems using message queues (Kafka, RabbitMQ)
+- Write comprehensive unit and integration tests
+- Collaborate with frontend engineers and data scientists
+- Participate in architectural discussions and technical planning
+- Monitor system performance and troubleshoot production issues
+
+Required Qualifications:
+- 3+ years of backend development experience with Python
+- Strong proficiency in Python frameworks (Django, Flask, or FastAPI)
+- Experience with relational databases (PostgreSQL, MySQL)
+- Understanding of microservices architecture and design patterns
+- Knowledge of RESTful API design best practices
+- Experience with containerization (Docker)
+- Familiarity with cloud platforms (AWS, GCP, or Azure)
+- Strong understanding of data structures and algorithms
+- Experience with Git and collaborative development workflows
+
+Preferred Qualifications:
+- Experience with message queuing systems (Kafka, RabbitMQ, SQS)
+- Knowledge of NoSQL databases (MongoDB, Redis)
+- Experience with Kubernetes and container orchestration
+- Familiarity with CI/CD pipelines
+- Understanding of authentication/authorization (OAuth2, JWT)
+- Experience with performance optimization and caching strategies
+- Background in distributed systems
+- Open source contributions
+
+Tech Stack:
+- Backend: Python, FastAPI, Django
+- Databases: PostgreSQL, Redis, MongoDB
+- Message Queues: Apache Kafka, RabbitMQ
+- Infrastructure: AWS (Lambda, ECS, RDS), Docker, Kubernetes
+- Monitoring: Prometheus, Grafana, ELK Stack
+- Tools: Git, GitHub Actions, Postman
+
+What We Offer:
+- Competitive salary ($110k-$150k) based on experience
+- Fully remote work environment
+- Comprehensive health benefits
+- 401(k) with company match
+- Generous PTO and flexible schedule
+- Annual professional development budget
+- Latest hardware and software tools
+- Equity options
+- Quarterly team offsites

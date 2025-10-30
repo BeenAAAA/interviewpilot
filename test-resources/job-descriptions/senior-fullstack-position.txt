@@ -1,0 +1,51 @@
+Job Title: Senior Full-Stack Engineer
+Company: TechVision Inc
+Location: San Francisco, CA (Hybrid)
+
+About Us:
+TechVision Inc is a rapidly growing SaaS company providing innovative project management solutions to enterprise clients. We're looking for a talented Senior Full-Stack Engineer to join our engineering team and help scale our platform to support millions of users.
+
+Role Overview:
+We're seeking an experienced full-stack engineer who can lead technical initiatives, mentor team members, and contribute to architectural decisions. You'll work on challenging problems involving real-time collaboration, data synchronization, and system scalability.
+
+Key Responsibilities:
+- Design and implement scalable features across the full stack
+- Lead technical discussions and architectural decision-making
+- Mentor junior and mid-level engineers through code reviews and pair programming
+- Optimize application performance and scalability
+- Collaborate with product managers and designers to deliver user-centric solutions
+- Participate in on-call rotation for production support
+- Contribute to technical documentation and best practices
+
+Required Qualifications:
+- 5+ years of professional software development experience
+- Strong expertise in JavaScript/TypeScript and modern frontend frameworks (React, Vue, or Angular)
+- Proven experience building RESTful APIs and microservices
+- Solid understanding of database design (SQL and NoSQL)
+- Experience with cloud platforms (AWS, Azure, or GCP)
+- Strong problem-solving skills and attention to detail
+- Excellent communication and collaboration abilities
+
+Preferred Qualifications:
+- Experience with real-time systems using WebSockets or similar technologies
+- Knowledge of container orchestration (Docker, Kubernetes)
+- Familiarity with CI/CD pipelines and DevOps practices
+- Experience with testing frameworks and TDD/BDD methodologies
+- Track record of mentoring and technical leadership
+- Open source contributions
+
+Tech Stack:
+- Frontend: React, TypeScript, Redux, Tailwind CSS
+- Backend: Node.js, Express, Python
+- Databases: PostgreSQL, Redis, MongoDB
+- Infrastructure: AWS, Docker, Kubernetes
+- Tools: Git, Jest, Webpack, GitHub Actions
+
+What We Offer:
+- Competitive salary ($150k-$200k) + equity
+- Comprehensive health, dental, and vision insurance
+- 401(k) matching
+- Flexible PTO policy
+- Remote work options
+- Professional development budget
+- Modern tech stack and engineering tools
