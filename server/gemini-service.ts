@@ -57,7 +57,7 @@ export async function analyzeResponse(
   interviewContext: InterviewContext,
   conversationHistory: Array<{ role: string; content: string }>,
 ): Promise<AnalysisResult> {
-  const systemInstruction = `You are an expert interview assessor. Analyze the candidate's response and provide feedback.
+  const systemInstruction = `You are an expert interview assessor. Analyze the response and provide feedback.
 
 INTERVIEW CONTEXT:
 - Position: ${interviewContext.jobTitle} at ${interviewContext.companyName}
@@ -66,17 +66,20 @@ INTERVIEW CONTEXT:
 CANDIDATE'S RESUME:
 ${interviewContext.resumeText}
 
-Analyze the candidate's latest response for:
+Analyze their latest response for:
 1. Technical accuracy and depth
 2. Communication clarity
 3. Relevant experience demonstration
 4. Problem-solving approach
 5. Cultural fit indicators
+6. Encouragement
 
 Provide a JSON response with:
 - feedbackType: "strength", "mistake", or "observation" (or null if no specific feedback)
-- feedbackText: Brief description of the feedback (or null)
-- scoreAdjustment: Number between -3 and +3 to adjust overall score (start conservative, most responses should be 0 to +2)`;
+- feedbackText: Brief description using pronouns like "You" (or null)
+- scoreAdjustment: Number between -3 and +3 to adjust overall score (start conservative, most responses should be 0 to +2)
+
+Example feedback: (For strength) "Great! You demonstrated strong problem-solving skills in this response." or (for mistake) "Your explanation lacked technical depth in some areas. (for observation) Improve it by using [short suggestion]", or "Your writing was a little unclear, but still understandable."`;
 
   const conversationContext = conversationHistory
     .slice(-5)
@@ -85,7 +88,7 @@ Provide a JSON response with:
 
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-2.5-pro",
+      model: "gemini-flash-lite-latest",
       config: {
         systemInstruction,
         responseMimeType: "application/json",
@@ -103,7 +106,7 @@ Provide a JSON response with:
           required: ["scoreAdjustment"],
         },
       },
-      contents: `Recent conversation:\n${conversationContext}\n\nLatest candidate response: ${candidateResponse}`,
+      contents: `Recent conversation:\n${conversationContext}\n\nLatest response to analyze: ${candidateResponse}`,
     });
 
     const rawJson = response.text;
