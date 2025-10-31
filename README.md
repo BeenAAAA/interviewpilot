@@ -1,4 +1,4 @@
-# InterviewPilot 🎯
+# InterviewPilot 👨‍✈️
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-92%25-blue)
 ![License](https://img.shields.io/github/license/BeenAAAA/interviewpilot)
@@ -112,19 +112,10 @@ interface Feedback {
 }
 ```
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - Google Gemini team for the AI capabilities
 - The React and TypeScript communities
-- All contributors and users of InterviewPilot
 
 ---
 
